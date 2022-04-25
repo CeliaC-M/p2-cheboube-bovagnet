@@ -22,26 +22,24 @@
 <div class="container">
     <h2>Refuge</h2>
 
-    <form id="add_chat" action="http://localhost:3000/chat" method="post">
-        <div class="row">
-            <div class="col">
-                <input id="nom_chat" name="nom" type="text" required class="form-control" placeholder="Nom">
-            </div>
-            <div class="col">
-                <input id="description_chat" name="description" required type="text" class="form-control"
-                       placeholder="Description">
-            </div>
-            <div class="col">
-                <input id="age_chat" name="age" type="number" required class="form-control" placeholder="Age">
-            </div>
-            <div class="col">
-                <input type="submit" class="btn btn-primary" />
-            </div>
-
-
-<!--            <button type="submit" onClick="redirect()" class="btn btn-primary">Ajouter un chat</button>-->
+    <div class="row">
+        <div class="col">
+            <input id="nom_chat" name="nom" type="text" required class="form-control" placeholder="Nom">
         </div>
-    </form>
+        <div class="col">
+            <input id="description_chat" name="description" required type="text" class="form-control"
+                   placeholder="Description">
+        </div>
+        <div class="col">
+            <input id="age_chat" name="age" type="number" required class="form-control" placeholder="Age">
+        </div>
+        <div class="col">
+            <button onClick="ajouter_chat()" class="btn btn-primary">Ajouter un chat</button>
+
+        </div>
+
+        <!--            <button type="submit" onClick="redirect()" class="btn btn-primary">Ajouter un chat</button>-->
+    </div>
 
     <br>
     <p><b>Voir les chats</b></p>

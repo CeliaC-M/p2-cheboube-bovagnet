@@ -56,4 +56,26 @@ function adopter_chat(id) {
     })
 }
 
+function ajouter_chat() {
+    let nom = document.getElementById('nom_chat')
+    let description = document.getElementById('description_chat')
+    let age = document.getElementById('age_chat')
+
+    fetch('http://localhost:3000/chat', {
+        method: "POST",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            nom: nom.value,
+            description: description.value,
+            age: age.value,
+        })
+    }).then(() => {
+        alert("Cat created")
+        appel_chats();
+    })
+}
+
 appel_chats()
