@@ -28,6 +28,7 @@ create table chat
     nom        varchar(50)   not null,
     age        int           not null,
     lien_image varchar(1000) null,
+     description varchar(50) not null,
     constraint chat_pk
         primary key (id)
 );
