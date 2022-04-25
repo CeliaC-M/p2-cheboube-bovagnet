@@ -56,10 +56,15 @@ npm install mysql
 npm install express
 ```
 
-Lancer le serveur
+Installer le projet (crée le dossier node_modules)
 
 ```bash
 npm install
+```
+
+Lancer le serveur
+
+```bash
 node code/app.js
 ```
 
@@ -89,21 +94,10 @@ Liste des routes developpées
 
 - POST : http://localhost:3000/chat/
 
-Exemple
-
-```sql
-curl -d '{"nom":"tom", "age" : "15","description": "dors beaucoup"}' -H "Content-Type: application/json" http://localhost:3000/chat
-```
 
 ### Modifier un chat
 
 - PUT : http://localhost:3000/chat/
-
-Exemple
-
-```sql
-curl -d '{"id": "2", "nom":"tom", "age" : "16","description": "dors encore plus"}' -H "Content-Type: application/json" http://localhost:3000/chat
-```
 
 ### Supprimer un chat
 
