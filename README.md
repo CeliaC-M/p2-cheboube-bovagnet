@@ -8,11 +8,6 @@ Projet d'API pour gérer un refuge pour chats
 
 ## MYSQL
 
-```sql
-CREATE USER 'test-tp'@'localhost' IDENTIFIED BY 'ILA9JycYpFsu';
-GRANT ALL PRIVILEGES ON *.* TO 'test-tp'@'localhost';
-```
-
 ## Schema
 
 Un chat a :
@@ -64,6 +59,7 @@ npm install express
 Lancer le serveur
 
 ```bash
+npm install
 node code/app.js
 ```
 
