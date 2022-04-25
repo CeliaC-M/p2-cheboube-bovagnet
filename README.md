@@ -41,7 +41,6 @@ Utilisation de Node pour la création de l'API
 
 ### Création du projet
 
-Dans le dossier **api_refuge**
 
 Créer le projet (Le fichier package.json est crée)
 
